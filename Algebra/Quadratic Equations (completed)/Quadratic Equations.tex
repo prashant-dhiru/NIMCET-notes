@@ -1,0 +1,146 @@
+\documentclass[11pt,a4paper,landscape]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\author{Himanshu Mittal}
+\title{Quadratic Equations}
+
+\renewcommand{\labelenumi}{\theenumi}
+
+\everymath{\displaystyle}
+\pagestyle{fancy}
+\fancyhf{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{2pt}
+\lfoot{\bfseries Himanshu Mittal : mittal01091997@gmail.com} 
+
+\begin{document}
+\begin{multicols*}{3}
+{\noindent \bfseries {\LARGE Quadratic Equations}}\\
+
+\section{Introduction}
+	\subsection{Definition}
+	For Coefficients: $a_0,\,a_1,\,a_2\,\cdots\,a_n$, an equation in the form: $f(n) = a_0+a_1x+a_2x^2+\cdots+a_nx^n$ is called a polynomial of $n$ degree.
+	\begin{itemize}
+	\item \textbf{Real Polynomial:} Where all coefficients are real numbers.
+	\item \textbf{Complex Polynomial:} Where all coefficients are complex numbers.
+	\item \textbf{Polynomial Roots:} The Value satisfying the polynomial $f(n) = 0$ is called a root of the Equation.
+	\item \textbf{Quadratic Polynomial:} A Equation of degree 2.
+	\item \textbf{Cubic Polynomial:} A Equation of degree 3.
+	\end{itemize}
+	
+	\subsection{Position of Roots}
+	\renewcommand{\theenumi}{\roman{enumi}}%
+	\begin{enumerate}
+	\item Every Equation of odd degree must have one real root.
+	\item Complex roots always lie in pairs.
+	\item Every even degree equation whose last term is negative and coefficient of first term is positive has two real roots, one is +ve and one is -ve.
+	\end{enumerate}
+	
+	\subsection{Discrete Rule of Signs}
+	\begin{itemize}
+	\item \textbf{Maximum number of +ve real roots:} Number of changes o sign from +ve to -ve and -ve to +ve in $f(x)$.
+	\noindent{\textbf{E.g.}}
+	\begin{tabular}{cccccc}
+	$f(x)=$ & $x^3$ & $+6x^2$ & $+11x$ & $-6$ & $=0$ \\ 
+	  & + & + & + & - &   \\ 
+	\end{tabular}
+	hence equation has at-most one +ve real root.
+	\item \textbf{Maximum number of -ve real roots:} Number of changes of sign from +ve to -ve and -ve to +ve in $f(-x)$.
+	\noindent{\textbf{E.g.}}
+	\begin{tabular}{cccccc}
+	$f(x)=$ & $x^3$ & $-6x^2$ & $+11x$ & $+6$ & $=0$ \\ 
+	$f(-x)=$ & $-x^3$ & $+6x^2$ & $-11x$ & $-6$ & $=0$ \\ 
+	  & - & + & - & - &   \\
+	\end{tabular}
+	Hence the equation has at-most two -ve real roots.
+	\item If all the terms of an Equation are Positive and the equation involves no odd powers of $x$, then all its roots are complex.
+	\end{itemize}
+	
+\section{Relation between roots and Coefficients}
+	\subsection{Formation of roots}
+	\textbf{Quadratic:} If $\alpha$, $\beta$ are the roots of equation $ax^2+bx+c=0$, then:\\
+	\begin{center}
+	$\alpha+\beta = \frac{-b}{a}$,\, $\alpha\beta = \frac{c}{a}$
+	\end{center}
+	
+	\textbf{Cubic:} If $\alpha, \beta, \gamma$ are the roots of equation $ax^3+bx^2+cx+d=0$, then:\\
+	\begin{center}
+	$\alpha+\beta+\gamma = \frac{-b}{a}$\\
+	$\alpha\beta+\beta\gamma+\alpha\gamma = \frac{c}{a}$\\
+	$\alpha\beta\gamma = \frac{-d}{a}$
+	\end{center}
+	\subsection{Formation of equation}
+	\textbf{Quadratic:} If $\alpha$, $\beta$ are the roots of an equation then equation is:\\
+	\begin{center}
+	$x^2-(\alpha+\beta)x+\alpha\beta=0$
+	\end{center}
+	\textbf{Cubic:} If $\alpha$, $\beta, \gamma$ are the roots of an equation then equation is:
+	\begin{center}
+	$x^3-(\alpha+\beta+\gamma)x^2+(\alpha\beta+\beta\gamma+\alpha\gamma)x-(\alpha\beta\gamma)=0$
+	\end{center}
+\section{Roots of an Equation}
+	\subsection{Roots of quadratic Equation}
+	\begin{tabular}{rl}
+    For an Equation:& $ax^2+bx+c=0$\\
+    Its Discriminant(D) is:& $b^2-4ac$\\
+    Its Roots:& $\displaystyle{\frac{-b\pm\sqrt{D}}{2a}}$\\
+    or,& $\displaystyle{\frac{-b\pm\sqrt{b^2-4ac}}{2a}}$
+	\end{tabular}
+	\begin{large}
+	\textbf{Nature of Roots}
+	\end{large}
+	
+	\renewcommand{\theenumi}{\roman{enumi}}%
+	\begin{enumerate}
+	\item $D>0\Rightarrow$ Real and distinct roots.
+	\item $D=0\Rightarrow$ Real and equal roots.
+	\item $D<0\Rightarrow$ complex roots.
+	\item $D$ is a perfect square (and $a,b,c$ is a perfect square)$\Rightarrow$ Roots are rational
+	\item $a=1\ \&\ b,c\in \mathbb{Z}$ and then roots are rational $\Rightarrow$ roots are integers
+	\item Surd roots of an equation always lie in pairs: \textbf{e.g.} $2+\sqrt{3}\ \&\ 2-\sqrt{3}$\\
+	however, if coefficients are irrational, this may not be true.
+	\end{enumerate}
+	
+	\subsection{Common Roots}
+	let two quadratic equations be:	$f_1(x)=a_1x^2+b_1x+c_1$ and $f_2(x)=a_2x^2+b_2x+c_2$ and let $\alpha$ be the common root, then:\\
+	$\displaystyle{\frac{\alpha^2}{b_1c_2-b_2c_1}=\frac{\alpha}{c_1a_2-a_2c_1}=\frac{1}{a_1b_2-a_2b_1}}$\\
+	
+	Hence common root $\alpha$ is given by:\\
+
+	$\displaystyle{\alpha=\frac{c_1a_2-a_2c_1}{a_1b_2-a_2b_1}}$ or $\displaystyle{\alpha=\frac{b_1c_2-b_2c_1}{c_1a_2-a_2c_1}}$
+	
+\section{Miscellaneous}
+	\subsection{Transformation of Equation}
+	\begin{itemize}
+	\item An Equation hose roots are reciprocal of the roots of a given equation is obtained y replacing $x$ by $\displaystyle{\frac{1}{x}}$ in the given equation.
+	\item An Equation whose roots are negative of the roots of a given equation is obtained y replacing $x$ by $-x$ in the given equation.
+	\item An Equation whose roots are squares of the roots of a given equation is obtained y replacing $x$ by $\sqrt{x}$ in the given equation.
+	\item An Equation whose roots are cubes of the roots of a given equation is obtained y replacing $x$ by $\sqrt[3]{x}$ in the given equation.
+	\end{itemize}
+	\subsection{Maximum and Minimum value of rational expression}
+	To find the value attained by a rational expression of the form:
+	\begin{center}
+	$\frac{a_1x^2+b_1x+c_1}{a_2x^2+b_2x+c_2}$ for real values of $x$,
+	\end{center}
+	we may use the following algorithm:
+	\renewcommand{\theenumi}{\Roman{enumi}}%
+	\begin{enumerate}
+	\item Equate the given equation to $"y"$
+	\item Obtain a quadratic equation in $x$ by simplifying the expression in \textbf{Step I}.
+	\item Obtain the discriminant in \textbf{Step II}
+	\item Put discriminant from \textbf{Step III} to $\geq 0$ and solve the in-equation for $y$. The values of $y$ so obtained determine the set of values attained by the given rational expression.
+	\end{enumerate}
+	
+
+%put to do breaaks
+%\vfill\null
+%\columnbreak
+\end{multicols*}
+\end{document}
