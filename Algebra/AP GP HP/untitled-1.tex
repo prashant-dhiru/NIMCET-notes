@@ -13,32 +13,34 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{2pt}
 
-\lfoot{\bfseries Prashant Dhirendra : prashant.dhiru@gmail.com} 
+\everymath{\displaystyle}
+
+\lfoot{\textbf{Prashant Dhirendra : prashant.dhiru@gmail.com}} 
 \begin{document}
 \begin{multicols}{3}
 
-
 \begin{tabbing}
-{\bfseries {\Large Arithmetic Progression}}\\
-{\bfseries General term :} \hspace{10mm} \= $a_n = a+(n-1)d$ \\
-{\bfseries $n^{th}$ term from  end  :} \> $a+(m-n)d$ \\
+\textbf{\Large{Arithmetic Progression}}\\
+\textbf{General term :} \hspace{10mm} \= $a_n = a+(n-1)d$ \\
+\textbf{$\mathbf{n^{th}}$ term from  end  :} \> $a+(m-n)d$ \\
 where $n^{th}$ term from  end = $(m-n+1)$ from start\\ \\
+$n^{th}$ term from end: $l-(n-1)d$\\ \\
 
-{\bfseries if A,B,C are in AP:}
+\textbf{if A,B,C are in AP:}
 $2B=A+C$\\ \\
 $a_1 + a_n = a_2 + a_{n-1}$\\
 $2a_n = a_{n+k} + a_{n-k}$\\  \\
 
-{\bfseries selecting middle term of AP:} \\
+\textbf{selecting middle term of AP:} \\
 ODD $\Rightarrow - a +$  \> CD $\rightarrow d$\\
 EVEN $\Rightarrow (a-d)(a+d)$  \> CD $\rightarrow 2d$\\ \\
 
-{\bfseries Sum of AP :} \\
-with common difference \> $\displaystyle S_n = \frac{n}{2}\{2a+(n-1)d\}$\\ \\ 
-with last term \> $\displaystyle S_n = \frac{n}{2}\{a+l\}$
+\textbf{Sum of AP :} \\
+with common difference \> $S_n = \frac{n}{2}\{2a+(n-1)d\}$\\ \\ 
+with last term \> $S_n = \frac{n}{2}\{a+l\}$
 \end{tabbing}
 
-{\bfseries \noindent results of sum of AP :} 
+\textbf{\noindent results of sum of AP :} 
 \begin{itemize}
   	\item Seq is AP $\rightarrow$ if sum of n terms form $An^{2}+Bn$
 	\item if ratio of sum is given, then ratio of $n^{th}$ term is \\ $\rightarrow$ replace $n$ by $2n-1$
@@ -57,7 +59,7 @@ with last term \> $\displaystyle S_n = \frac{n}{2}\{a+l\}$
 \begin{itemize}
   	\item GP divided/multiplied by constant, stays GP
 	\item reciprocal of GP, is GP
-	\item $a_1 a_n = a_2 a_{n-1} = a_k a_{n-k+1}$
+	\item $a_1 a_n = a_2 a_{n-1} =\cdots= a_k a_{n-k+1}$
 	\item $b^2 = ac$
 	\item for a GP $a_1, a_2 \ldots a_n$\\
 		$\Rightarrow GM = \left({a_1 a_2 \ldots a_n} \right)^{\frac{1}{n}}$
@@ -68,25 +70,25 @@ with last term \> $\displaystyle S_n = \frac{n}{2}\{a+l\}$
 $
 	S_n =
 	\begin{cases}
-	a\left(\displaystyle \frac{1-r^{n}}{1-r} \right), & r \neq 1\\
+	a\left(\frac{1-r^{n}}{1-r} \right), & r \neq 1\\
 	na, & r
 	\end{cases}
 $\\ \\ \\
 $
-	S_n = \displaystyle \frac{a -lr}{1-r}=  \displaystyle \frac{lr-a}{r-1}
+	S_n = \frac{a -lr}{1-r}=  \displaystyle \frac{lr-a}{r-1}
 $\\ \\ \\
 $
 	S_\infty =
 	\begin{cases}
-		\displaystyle \frac{a}{1-r} & \quad -1<r<1
+		\frac{a}{1-r} & \quad -1<r<1
 	\end{cases}
 $\\
 \begin{tabbing}
 {\bfseries \noindent {\Large Harmonic Progression}}\\
 if $a_1,a_2 \ldots a_n$ are in HP\\ \\
-then $\displaystyle \frac{1}{a_1},\frac{1}{a_2} \ldots \frac{1}{a_n}$ are in AP\\ \\ \\
+then $\frac{1}{a_1},\frac{1}{a_2} \ldots \frac{1}{a_n}$ are in AP\\ \\ \\
 {\bfseries \noindent common difference : }\hspace{2mm} \= $d = \frac{1}{a_2}-\frac{1}{a_1}$\\ \\ \\
-{\bfseries \noindent general term : }\> $a_n = \frac{1}{\displaystyle \frac{1}{a_1}+(n-1)d}$
+{\bfseries \noindent general term : }\> $a_n = \frac{1}{\frac{1}{a_1}+(n-1)d}$
 \end{tabbing}
 {\bfseries \noindent Harmonic Mean(H)}
 \begin{itemize}
@@ -106,9 +108,12 @@ $a,(a+d)r,(a+2d)r^2,\ldots$ is a A.G. sequence
 {\bfseries \noindent {\Large Sum of Some Sequence}}
 \begin{tabbing}
 first $n$ natural no : \hspace{5mm}\=$\frac{n(n+1)}{2}$\\ \\
+first $n$ odd no : \> $n^2$\\ \\
+first $n$ even no : \> $n(n+1)$\\ \\
 square of first $n$ no : \> $\frac{n(n+1)(2n+1)}{6}$\\ \\
 cube of first $n$ no : \> ${\left \{ \frac{n(n+1)}{2} \right \} }^2$\\\\
 $4^{th}$ power of $n$ no : \> $\frac{n(n+1)(2n+1)(3n^{2}+3n-1)}{30}$
+
 \end{tabbing}
 \end{multicols}
 \pagebreak
