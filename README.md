@@ -1,8 +1,6 @@
 # NIMCET-notes
 latex notes for NIMCET examination (entrance examination for MCA courses for NITs in India  )
 
-Tangent and normal notes are incomplete.
-
 Topics to be Included (not all topics really, and some topics maybe marged into one note):
 # Trignometry
 * Trignometric ratios and identities
