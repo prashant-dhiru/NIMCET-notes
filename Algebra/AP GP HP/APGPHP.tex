@@ -1,0 +1,210 @@
+\documentclass[11pt,a4paper,landscape]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{enumerate}
+
+\author{Himanshu Mittal}
+\title{AP, GP, HP}
+
+\everymath{\displaystyle}
+\pagestyle{fancy}
+\fancyhf{}
+\graphicspath{{./images/}}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{2pt}
+\setlength\parindent{0pt}
+\lfoot{\textbf{Himanshu Mittal : mittal01091997@gmail.com}}
+
+\begin{document}
+\begin{multicols*}{3}
+\textbf{\Huge{AP, GP, HP}}
+
+\section{Arithmetic Progression}
+	\subsection{Introduction}
+	For starting term $a$, common difference $d$, an A.P. of $n$ terms could be formed as:
+	$$a,\,a+d,\,a+2d,\,\cdots,\,a+(n-1)d$$
+	\textbf{\large{Properties:}}
+	\begin{itemize}
+	\item General term: $a_n = a+(n-1)d$\\
+		(Also called last term $l$)
+	\item Sum of an A.P.:\\
+		$S_n=\frac{n}{2}\{2a+(n-1)d\}$\\ 
+		$S_n = \frac{n}{2}\{a+l\}$	
+	\item In A.P. of $m$ terms:\\
+		$n^{th}$ term from end = $(m-n+1)^{th}$ term from start\\
+		$n^{th}$ term from end: $a+(m-n)d$\\
+		$n^{th}$ term from end: $l-(n-1)d$
+	\item If $a,\,b,\,c$ are in A.P.:\\
+		$2b=a+c$\\
+		$a_1 + a_n = a_2 + a_{n-1} =\cdots$\\
+		$2a_n = a_{n+k} + a_{n-k}$	
+	\item Middle term of A.P.:\\
+		ODD $\Rightarrow \frac{n+1}{2}$,\hspace{11mm} CD $\rightarrow d$\\
+		EVEN $\Rightarrow \frac{n}{2}$ or $\frac{n}{2}+1$, CD $\rightarrow 2d$
+	\end{itemize}
+\vfill\null
+\columnbreak
+	\textbf{Results of sum of AP :} 
+	\begin{itemize}
+  	\item Seq is AP $\rightarrow$ if sum of n terms form $An^{2}+Bn$
+	\item if ratio of sum is given, then ratio of $n^{th}$ term is \\
+		$\rightarrow$ replace $n$ by $2n-1$
+	\item if ratio of $n^{th}$ term is given, then ratio of sum is \\
+		$\rightarrow$ replace $n$ by $\displaystyle \frac{n+1}{2}$
+	\end{itemize}
+
+	
+	
+	
+	
+	\subsection{Arithmetic Mean (AM)}
+	Arithmetic mean between $a$ and $b$ be:
+	$$A=\frac{a+b}{2}$$
+	AM of $n$ terms: $\frac{1}{n}[a_1+a_2+a_3+\cdots+a_n]$\\
+	\textbf{n AM between two numbers:}\\
+	For $a$ and $b$, $n$ AMs are:
+	$$a,\,A_1,\,A_2,\,A_3,\,\cdots,\,A_n,\,b$$
+	\begin{itemize}
+	\item number of terms: $n+2$
+	\item common difference: $\frac{b-a}{n+1}$
+	\item $n^{th}$ term of n AM: $a+nd$
+	\end{itemize}
+	\subsection{Sum of some Sequence}
+	\begin{tabbing}
+	First $n$ natural number : \hspace{2mm}\=$\frac{n(n+1)}{2}$\\[3mm] 
+	First $n$ odd number : \> $n^2$\\[3mm]
+	First $n$ even number : \> $n(n+1)$\\[3mm]
+	Square of first $n$ number : \> $\frac{n(n+1)(2n+1)}{6}$\\
+	Cube of first $n$ number : \> ${\left \{ \frac{n(n+1)}{2} \right \} }^2$\\[3mm]
+	$4^{th}$ power of $n$ no : $\frac{n(n+1)(2n+1)(3n^{2}+3n-1)}{30}$ \> 
+	\end{tabbing}
+\section{Geometric Progression}
+	\subsection{Introduction}
+	For starting term $a$, common difference $r$, an G.P. could be formed as:
+	$$a,\,ar,\,ar^2,\,ar^3,\,\cdots,\,ar^{n-1},\,ar^n,\,\cdots$$
+	\textbf{\large{Properties:}}
+	\begin{itemize}
+	\item General term: $a_n = ar^{n-1}$\\
+		(Also called last term $l$)
+	\item Sum of n terms:\\
+		$
+		S_n=
+		\begin{cases}
+		a\left(\frac{1-r^{n}}{1-r} \right), & r \neq 1\\
+		na, & r=1
+		\end{cases}
+		$\\
+		$S_n = \frac{a-lr}{1-r}= \frac{lr-a}{r-1}$
+	\item Sum of $\infty$ terms:\\
+		$
+		S_\infty =
+		\begin{cases}
+		\frac{a}{1-r} & |r|<1\\
+		\infty & |r|>1
+		\end{cases}
+		$
+	\item In G.P. of $m$ terms:\\
+		$n^{th}$ term from end: $a_n = ar^{m-n}$\\
+		$n^{th}$ term from end: $a_n= l \left({\frac{1}{r}} \right)^{n-1}$
+	\item If $a,\,b,\,c$ are in G.P.:\\
+		$b^2 = ac$\\
+		$a_1 a_n = a_2 a_{n-1} =\cdots= a_k a_{n-k+1}$
+	\item GP divided/multiplied by constant, stays GP
+	\item reciprocal of GP, is GP
+	\item if  $a_1,a_2 \ldots a_n \Rightarrow$ GP \\
+		$\log a_1, \log a_2 \ldots \log a_n \Rightarrow$ AP and vice-versa	
+	\end{itemize}
+	\subsection{Geometric Mean (GM)}
+	Geometric mean between $a$ and $b$ be:
+	$$G=\sqrt{ab}$$
+	GM of $n$ terms: $(a_1\cdot a_2\cdot a_3\cdots a_n)^{\frac{1}{n}}$\\
+	\textbf{n GM between two numbers:}\\
+	For $a$ and $b$, $n$ GMs are:
+	$$a,\,G_1,\,G_2,\,G_3,\,\cdots,\,G_n,\,b$$
+	\begin{itemize}
+	\item number of terms: $n+2$
+	\item common difference: $r=\left(\frac{b}{a}\right)^{\frac{1}{n+1}}$
+	\item $n^{th}$ term of n GM: $ar^n$
+	\end{itemize}
+\vfill\null
+\columnbreak
+\section{Harmonic Progression}
+	\subsection{Introduction}
+	A series $H=a_1,\,a_2,\,a_3,\,\cdots,\,a_n$ is said to be in H.P., iff $\frac{1}{a_1},\,\frac{1}{a_2},\,\frac{1}{a_3},\,\cdots,\,\frac{1}{a_n}$ is in an arithmetic progression.\\
+	\begin{tabbing}
+	\textbf{\large{Example:}} \hspace{4mm} \= 	$2,\,3,\,6 \Leftarrow$ H.P.\\
+	 \> $\frac{1}{2},\frac{1}{3},\frac{1}{6} \Leftarrow$ A.P.\\
+	\end{tabbing}
+	\textbf{\large{Properties:}}
+	\begin{itemize}
+	\item Common difference: $d = \frac{1}{a_2}-\frac{1}{a_1}$
+	\item General term:\\
+		If $a$ and $d$ are two terms of A.P.: $h_n=\frac{1}{a+(n-1)d}$\\
+		If $a$ and $d$ are two terms of H.P.: $h_n=\frac{1}{\frac{1}{a}+(n-1)\left(\frac{1}{b}-\frac{1}{a}\right)}$
+	\end{itemize}
+	\subsection{Harmonic Mean}
+	Harmonic mean between $a$ and $b$ be:
+	$$H=\frac{2ab}{a+b}$$
+	HM of $n$ terms: $\frac{n}{\frac{1}{a_1},\,\frac{1}{a_2},\,\frac{1}{a_3},\,\cdots,\,\frac{1}{a_n}}$\\
+	\textbf{n HM between two numbers:}\\
+	For $a$ and $b$, $n$ HMs are:
+	$$a,\,H_1,\,H_2,\,H_3,\,\cdots,\,H_n,\,b$$
+	\begin{itemize}
+	\item number of terms: $n+2$
+	\item common difference: $\frac{a-b}{(n+1)ab}$
+	\item $n^{th}$ term of n HM: $\frac{1}{a}+(n+1)D$
+	\end{itemize}
+\section{Relation between AP, GP and HP}
+	\begin{itemize}
+	\item \textbf{A,G and H between 2 numbers(a and b):}
+		$$A =\frac{a+b}{2} \qquad G =\sqrt{AB} \qquad H=\frac{2ab}{a+b}$$
+	\item $A\geq G\geq H$
+	\item quadratic equation having a and b as its roots
+		$$x^2 - 2Ax+G^2=0$$
+	\item the two numbers (a,b) are $A\pm \sqrt{A^2 - G^2}$
+	\item if $A$ and $G$ are in the ratio $m:n$,
+		then the number(a,b) are in ratio$$m+\sqrt{m^2 - n^2} : m-\sqrt{m^2 - n^2}$$
+	\item \textbf{A,G and H between 3 numbers $\mathbf{(a, b, c)}$:}
+		$$A=\frac{a+b+c}{3} \quad G=\sqrt[3]{abc} \quad \frac{1}{H}=\frac{\frac{1}{a}+\frac{1}{b}+\frac{1}{c}}{3}$$
+	\item cubic equation where a,b,c are the roots
+		$$x^3-3Ax^2+\frac{3G^3}{H}x-G^3=0$$
+	\item \textbf{Example:} for $1$ and $9$
+	$$A=5 \quad G=3 \quad H=\frac{9}{5}$$
+	$$G^2=AH \Rightarrow 9=5\cdot \frac{9}{5}$$
+\end{itemize}
+\section{Arithmetico-geometric Progression (AGP)}
+	$a,(a+d)r,(a+2d)r^2,\cdots,(a+nd)r^n$ is a AGP sequence\\[4mm]
+	\textbf{$n^{th}$ term:} $a_n = \{a+(n-1)d\}.r^{n-1}$\\[4mm]
+	\textbf{Sum of  $\infty$ term:}\\[3mm]
+		$
+		S_{\infty}=
+		\begin{cases}
+		\frac{a}{1-r}+\frac{d.r}{(1-r)^2}, & |r|<1\\
+		\infty, & |r|>1
+		\end{cases}		
+		$\\[4mm]
+	\textbf{Sum of $n$ terms:}\\[3mm]
+		$S_n=\frac{dr(1-r^{n-1})}{(1-r)^2}-\frac{a-[a+(n-1)d]r^n}{1-r}$	
+	
+\vfill\null
+\columnbreak
+\textbf{\huge{Tips and Tricks}}\\
+(black space for tips,tricks and important question)\\ \\
+	\textbf{Finding sum of AGP through diference method}
+	\begin{enumerate}
+	\item multiply $r$ in the series
+	\item subtract new series from old series $S_n-rS_n$
+	\item Now you are left with an AP, find sum as of an AP
+	\end{enumerate}
+\end{multicols*}
+\end{document}
